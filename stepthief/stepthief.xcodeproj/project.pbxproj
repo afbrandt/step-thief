@@ -10,14 +10,13 @@
 		495B8B1119D9E2BD001138FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B1019D9E2BD001138FC /* main.m */; };
 		495B8B1419D9E2BD001138FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B1319D9E2BD001138FC /* AppDelegate.m */; };
 		495B8B1719D9E2BD001138FC /* stepthief.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B1519D9E2BD001138FC /* stepthief.xcdatamodeld */; };
-		495B8B1A19D9E2BD001138FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B1919D9E2BD001138FC /* ViewController.m */; };
 		495B8B1D19D9E2BD001138FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495B8B1B19D9E2BD001138FC /* Main.storyboard */; };
 		495B8B1F19D9E2BD001138FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495B8B1E19D9E2BD001138FC /* Images.xcassets */; };
 		495B8B2219D9E2BD001138FC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495B8B2019D9E2BD001138FC /* LaunchScreen.xib */; };
 		495B8B2E19D9E2BD001138FC /* stepthiefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B2D19D9E2BD001138FC /* stepthiefTests.m */; };
 		495B8B3C19D9F97C001138FC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B3B19D9F97C001138FC /* Player.m */; };
-		495B8B3F19D9F990001138FC /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B3E19D9F990001138FC /* Friend.m */; };
-		495B8B4219D9F991001138FC /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B4119D9F991001138FC /* Action.m */; };
+		495B8B4519DA00FF001138FC /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B4419DA00FF001138FC /* Action.m */; };
+		495B8B4819DA0100001138FC /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B4719DA0100001138FC /* Friend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +36,6 @@
 		495B8B1219D9E2BD001138FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		495B8B1319D9E2BD001138FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		495B8B1619D9E2BD001138FC /* stepthief.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stepthief.xcdatamodel; sourceTree = "<group>"; };
-		495B8B1819D9E2BD001138FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		495B8B1919D9E2BD001138FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		495B8B1C19D9E2BD001138FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		495B8B1E19D9E2BD001138FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		495B8B2119D9E2BD001138FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,10 +44,10 @@
 		495B8B2D19D9E2BD001138FC /* stepthiefTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stepthiefTests.m; sourceTree = "<group>"; };
 		495B8B3A19D9F97C001138FC /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		495B8B3B19D9F97C001138FC /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		495B8B3D19D9F990001138FC /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
-		495B8B3E19D9F990001138FC /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
-		495B8B4019D9F991001138FC /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
-		495B8B4119D9F991001138FC /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		495B8B4319DA00FF001138FC /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Action.h; path = ../Action.h; sourceTree = "<group>"; };
+		495B8B4419DA00FF001138FC /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Action.m; path = ../Action.m; sourceTree = "<group>"; };
+		495B8B4619DA0100001138FC /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Friend.h; path = ../Friend.h; sourceTree = "<group>"; };
+		495B8B4719DA0100001138FC /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Friend.m; path = ../Friend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,16 +89,14 @@
 		495B8B0D19D9E2BD001138FC /* stepthief */ = {
 			isa = PBXGroup;
 			children = (
-				495B8B4019D9F991001138FC /* Action.h */,
-				495B8B4119D9F991001138FC /* Action.m */,
+				495B8B4319DA00FF001138FC /* Action.h */,
+				495B8B4419DA00FF001138FC /* Action.m */,
 				495B8B1219D9E2BD001138FC /* AppDelegate.h */,
 				495B8B1319D9E2BD001138FC /* AppDelegate.m */,
+				495B8B4619DA0100001138FC /* Friend.h */,
+				495B8B4719DA0100001138FC /* Friend.m */,
 				495B8B3A19D9F97C001138FC /* Player.h */,
 				495B8B3B19D9F97C001138FC /* Player.m */,
-				495B8B3D19D9F990001138FC /* Friend.h */,
-				495B8B3E19D9F990001138FC /* Friend.m */,
-				495B8B1819D9E2BD001138FC /* ViewController.h */,
-				495B8B1919D9E2BD001138FC /* ViewController.m */,
 				495B8B1B19D9E2BD001138FC /* Main.storyboard */,
 				495B8B1E19D9E2BD001138FC /* Images.xcassets */,
 				495B8B2019D9E2BD001138FC /* LaunchScreen.xib */,
@@ -239,9 +234,8 @@
 			files = (
 				495B8B1719D9E2BD001138FC /* stepthief.xcdatamodeld in Sources */,
 				495B8B1419D9E2BD001138FC /* AppDelegate.m in Sources */,
-				495B8B4219D9F991001138FC /* Action.m in Sources */,
-				495B8B1A19D9E2BD001138FC /* ViewController.m in Sources */,
-				495B8B3F19D9F990001138FC /* Friend.m in Sources */,
+				495B8B4519DA00FF001138FC /* Action.m in Sources */,
+				495B8B4819DA0100001138FC /* Friend.m in Sources */,
 				495B8B1119D9E2BD001138FC /* main.m in Sources */,
 				495B8B3C19D9F97C001138FC /* Player.m in Sources */,
 			);

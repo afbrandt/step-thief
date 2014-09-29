@@ -7,6 +7,7 @@
 //
 
 #import "Action.h"
+#import "Player.h"
 
 
 @implementation Action
@@ -15,5 +16,6 @@
 @dynamic actionTimestamp;
 @dynamic fitBitNickname;
 @dynamic energyAmount;
+@dynamic actionParticipant;
 
 @end

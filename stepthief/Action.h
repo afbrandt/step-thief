@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Player;
 
 @interface Action : NSManagedObject
 
@@ -16,5 +17,6 @@
 @property (nonatomic, retain) NSDate * actionTimestamp;
 @property (nonatomic, retain) NSString * fitBitNickname;
 @property (nonatomic, retain) NSNumber * energyAmount;
+@property (nonatomic, retain) Player *actionParticipant;
 
 @end

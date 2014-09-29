@@ -7,6 +7,7 @@
 //
 
 #import "Friend.h"
+#import "Player.h"
 
 
 @implementation Friend
@@ -14,5 +15,6 @@
 @dynamic fitBitNickname;
 @dynamic fitBitAvatar;
 @dynamic publicScore;
+@dynamic friend;
 
 @end

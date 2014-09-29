@@ -5,11 +5,13 @@
         <attribute name="didStealFrom" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="energyAmount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="fitBitNickname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="actionParticipant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="actionHistory" inverseEntity="Player" syncable="YES"/>
     </entity>
     <entity name="Friend" representedClassName="Friend" syncable="YES">
         <attribute name="fitBitAvatar" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="fitBitNickname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="publicScore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="friend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="friendList" inverseEntity="Player" syncable="YES"/>
     </entity>
     <entity name="Player" representedClassName="Player" syncable="YES">
         <attribute name="earnedEnergy" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
@@ -26,12 +28,12 @@
         <attribute name="publicScore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="shieldExpirationTimestamp" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="spentEnergy" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="actionHistory" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Action" syncable="YES"/>
-        <relationship name="friendList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Friend" syncable="YES"/>
+        <relationship name="actionHistory" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Action" inverseName="actionParticipant" inverseEntity="Action" syncable="YES"/>
+        <relationship name="friendList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Friend" inverseName="friend" inverseEntity="Friend" syncable="YES"/>
     </entity>
     <elements>
         <element name="Player" positionX="-63" positionY="-18" width="128" height="283"/>
-        <element name="Friend" positionX="313" positionY="234" width="128" height="88"/>
-        <element name="Action" positionX="171" positionY="-0" width="128" height="103"/>
+        <element name="Friend" positionX="313" positionY="234" width="128" height="103"/>
+        <element name="Action" positionX="171" positionY="-0" width="128" height="118"/>
     </elements>
 </model>

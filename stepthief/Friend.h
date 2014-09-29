@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Player;
 
 @interface Friend : NSManagedObject
 
 @property (nonatomic, retain) NSString * fitBitNickname;
 @property (nonatomic, retain) NSData * fitBitAvatar;
 @property (nonatomic, retain) NSNumber * publicScore;
+@property (nonatomic, retain) Player *friend;
 
 @end
