@@ -42,4 +42,6 @@
 - (void)addActionHistory:(NSSet *)values;
 - (void)removeActionHistory:(NSSet *)values;
 
++ (instancetype)createPlayerFromContext: (NSManagedObjectContext *)context;
+
 @end

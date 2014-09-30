@@ -14,5 +14,6 @@
 
 @property (strong, nonatomic) Player *player;
 @property (strong, nonatomic) OAuthIOModal *modal;
+@property (strong, nonatomic) NSManagedObjectContext *context;
 
 @end

@@ -28,4 +28,12 @@
 @dynamic friendList;
 @dynamic actionHistory;
 
++ (instancetype)createPlayerFromContext: (NSManagedObjectContext *)context {
+    Player *player;
+    
+    player = [NSEntityDescription insertNewObjectForEntityForName:@"Player" inManagedObjectContext:context];
+
+    return player;
+}
+
 @end

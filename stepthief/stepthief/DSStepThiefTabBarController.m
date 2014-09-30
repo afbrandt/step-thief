@@ -24,17 +24,17 @@
     NSArray *result = nil;
     NSError *error = nil;
     
-    NSManagedObjectContext *context = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).managedObjectContext;
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Player" inManagedObjectContext:context];
+    self.context = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Player" inManagedObjectContext:self.context];
     
     NSFetchRequest *request = [NSFetchRequest new];
     [request setEntity:entityDescription];
     
-    result = [context executeFetchRequest:request error:&error];
+    result = [self.context executeFetchRequest:request error:&error];
+    self.modal = [[OAuthIOModal alloc] initWithKey:@"EF4100vEBO6Ns-qOq-BSjYk-sMs" delegate:self];
     
     if ([result count] == 0) {
         NSLog(@"No player data found... starting new player flow");
-        self.modal = [[OAuthIOModal alloc] initWithKey:@"EF4100vEBO6Ns-qOq-BSjYk-sMs" delegate:self];
         self.isNewPlayer = YES;
     }
     // Do any additional setup after loading the view.
@@ -47,14 +47,19 @@
         //New player logic goes here...
         [self.modal showWithProvider:@"fitbit"];
     }
+    
 }
 
 - (void)didReceiveOAuthIOResponse:(OAuthIORequest *)request {
     NSLog(@"OAuth flow succeeded");
     NSDictionary *creds = [request getCredentials];
+    NSError *error;
     for (id key in creds) {
         NSLog(@"key: %@, value: %@ \n", key, [creds objectForKey:key]);
     }
+    self.player = [Player createPlayerFromContext:self.context];
+    [self.player setFitBitToken: [creds valueForKey:@"oauth_token"]];
+    [self.context save:&error];
     self.isNewPlayer = NO;
 }
 

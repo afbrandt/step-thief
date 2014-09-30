@@ -56,6 +56,7 @@
 		495B8B4C19DA067A001138FC /* DSNewPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNewPlayerViewController.h; sourceTree = "<group>"; };
 		495B8B4D19DA067A001138FC /* DSNewPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNewPlayerViewController.m; sourceTree = "<group>"; };
 		495B8B4F19DA080F001138FC /* OAuthiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuthiOS.framework; sourceTree = "<group>"; };
+		49817C0019DB32C20023F9CD /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 		495B8B5119DA0817001138FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49817C0019DB32C20023F9CD /* libcommonCrypto.dylib */,
 				495B8B4F19DA080F001138FC /* OAuthiOS.framework */,
 			);
 			name = Frameworks;
@@ -391,6 +393,10 @@
 				);
 				INFOPLIST_FILE = stepthief/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -405,6 +411,10 @@
 				);
 				INFOPLIST_FILE = stepthief/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -462,6 +472,7 @@
 				495B8B3319D9E2BD001138FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		495B8B3419D9E2BD001138FC /* Build configuration list for PBXNativeTarget "stepthiefTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +481,7 @@
 				495B8B3619D9E2BD001138FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
