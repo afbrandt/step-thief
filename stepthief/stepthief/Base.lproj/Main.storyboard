@@ -23,6 +23,46 @@
             </objects>
             <point key="canvasLocation" x="591" y="746"/>
         </scene>
+        <!--New Player View Controller-->
+        <scene sceneID="OE0-t5-cGg">
+            <objects>
+                <viewController id="3Zt-OL-I0f" customClass="DSNewPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="11E-2v-wx3"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ve-0e-r97"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IxB-w0-3vb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XZ-aN-feL">
+                                <rect key="frame" x="250" y="285" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2uf-ek-CM4"/>
+                                    <constraint firstAttribute="height" constant="30" id="C3D-cq-z8I"/>
+                                </constraints>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startOAuthFlow:" destination="3Zt-OL-I0f" eventType="touchDown" id="qyk-Bs-KyA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="3XZ-aN-feL" secondAttribute="centerY" id="GJW-Ti-X2a"/>
+                            <constraint firstAttribute="centerX" secondItem="3XZ-aN-feL" secondAttribute="centerX" id="kKu-hq-vpJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="3XZ-aN-feL" id="NL0-sl-ouN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMa-sm-gV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="1103"/>
+        </scene>
         <!--Item-->
         <scene sceneID="nz3-ag-bEV">
             <objects>
@@ -69,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="1239" y="359"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Step Thief Tab Bar Controller-->
         <scene sceneID="yMC-eU-OE1">
             <objects>
-                <tabBarController id="S8e-2a-3rz" sceneMemberID="viewController">
+                <tabBarController id="S8e-2a-3rz" customClass="DSStepThiefTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="AcS-QU-bJl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -83,6 +123,7 @@
                         <segue destination="Nwr-Pd-he3" kind="relationship" relationship="viewControllers" id="10r-eh-Q14"/>
                         <segue destination="7cX-Rk-tgR" kind="relationship" relationship="viewControllers" id="GKK-do-MUS"/>
                         <segue destination="lJR-Cp-AYb" kind="relationship" relationship="viewControllers" id="2tR-zR-9pn"/>
+                        <segue destination="3Zt-OL-I0f" kind="presentation" identifier="newPlayerFlow" modalTransitionStyle="coverVertical" id="enC-je-W5A"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2H-jp-JS7" userLabel="First Responder" sceneMemberID="firstResponder"/>

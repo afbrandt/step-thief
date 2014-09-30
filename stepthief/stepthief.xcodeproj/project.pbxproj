@@ -17,6 +17,9 @@
 		495B8B3C19D9F97C001138FC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B3B19D9F97C001138FC /* Player.m */; };
 		495B8B4519DA00FF001138FC /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B4419DA00FF001138FC /* Action.m */; };
 		495B8B4819DA0100001138FC /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B4719DA0100001138FC /* Friend.m */; };
+		495B8B4B19DA044C001138FC /* DSStepThiefTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B4A19DA044C001138FC /* DSStepThiefTabBarController.m */; };
+		495B8B4E19DA067A001138FC /* DSNewPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495B8B4D19DA067A001138FC /* DSNewPlayerViewController.m */; };
+		495B8B5019DA080F001138FC /* OAuthiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495B8B4F19DA080F001138FC /* OAuthiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		495B8B4419DA00FF001138FC /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Action.m; path = ../Action.m; sourceTree = "<group>"; };
 		495B8B4619DA0100001138FC /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Friend.h; path = ../Friend.h; sourceTree = "<group>"; };
 		495B8B4719DA0100001138FC /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Friend.m; path = ../Friend.m; sourceTree = "<group>"; };
+		495B8B4919DA044C001138FC /* DSStepThiefTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSStepThiefTabBarController.h; sourceTree = "<group>"; };
+		495B8B4A19DA044C001138FC /* DSStepThiefTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSStepThiefTabBarController.m; sourceTree = "<group>"; };
+		495B8B4C19DA067A001138FC /* DSNewPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNewPlayerViewController.h; sourceTree = "<group>"; };
+		495B8B4D19DA067A001138FC /* DSNewPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNewPlayerViewController.m; sourceTree = "<group>"; };
+		495B8B4F19DA080F001138FC /* OAuthiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuthiOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495B8B5019DA080F001138FC /* OAuthiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +82,7 @@
 			children = (
 				495B8B0D19D9E2BD001138FC /* stepthief */,
 				495B8B2A19D9E2BD001138FC /* stepthiefTests */,
+				495B8B5119DA0817001138FC /* Frameworks */,
 				495B8B0C19D9E2BD001138FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +107,10 @@
 				495B8B4719DA0100001138FC /* Friend.m */,
 				495B8B3A19D9F97C001138FC /* Player.h */,
 				495B8B3B19D9F97C001138FC /* Player.m */,
+				495B8B4919DA044C001138FC /* DSStepThiefTabBarController.h */,
+				495B8B4A19DA044C001138FC /* DSStepThiefTabBarController.m */,
+				495B8B4C19DA067A001138FC /* DSNewPlayerViewController.h */,
+				495B8B4D19DA067A001138FC /* DSNewPlayerViewController.m */,
 				495B8B1B19D9E2BD001138FC /* Main.storyboard */,
 				495B8B1E19D9E2BD001138FC /* Images.xcassets */,
 				495B8B2019D9E2BD001138FC /* LaunchScreen.xib */,
@@ -130,6 +144,14 @@
 				495B8B2C19D9E2BD001138FC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495B8B5119DA0817001138FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495B8B4F19DA080F001138FC /* OAuthiOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495B8B4B19DA044C001138FC /* DSStepThiefTabBarController.m in Sources */,
 				495B8B1719D9E2BD001138FC /* stepthief.xcdatamodeld in Sources */,
 				495B8B1419D9E2BD001138FC /* AppDelegate.m in Sources */,
+				495B8B4E19DA067A001138FC /* DSNewPlayerViewController.m in Sources */,
 				495B8B4519DA00FF001138FC /* Action.m in Sources */,
 				495B8B4819DA0100001138FC /* Friend.m in Sources */,
 				495B8B1119D9E2BD001138FC /* main.m in Sources */,
@@ -361,6 +385,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = stepthief/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,6 +399,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = stepthief/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
